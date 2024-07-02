@@ -60,19 +60,763 @@ footer: "Utopios® Tous droits réservés"
  
 --- 
 
-## Architecture Applicative
-#### Quel type d’architecture logicielle?
+## Fondamentaux de la sécurité informatique
+#### Les enjeux et les risques
 <br>
 
 <div style="font-size:22px">
 
 
-    
-<center>
-<img src="./assets/image1.png" width="700px">
-</center>
-    
+**Enjeux de la sécurité informatique**
 
+1. ***Protection des données sensibles :***
+
+ - Protéger les informations personnelles, financières et professionnelles contre les accès non autorisés et les fuites de données.
+ - Garantir la confidentialité, l'intégrité et la disponibilité des données.
+
+2. ***Maintien de la continuité des activités :***
+
+ - Assurer la disponibilité des systèmes et des réseaux pour éviter les interruptions de service qui peuvent entraîner des pertes financières et de réputation.
+ - Mettre en place des plans de reprise après sinistre et de continuité des activités.
+
+
+---
+## Fondamentaux de la sécurité informatique
+#### Les enjeux et les risques
+<br>
+
+<div style="font-size:27px">
+
+
+**Enjeux de la sécurité informatique**
+
+</div>
+
+<div style="font-size:22px">
+
+3. ***Conformité réglementaire :***
+
+- Respecter les lois et les régulations en matière de protection des données et de cybersécurité (ex. RGPD, HIPAA).
+- Éviter les amendes et les sanctions liées à la non-conformité.
+
+4. ***Préservation de la réputation :***
+
+- Éviter les incidents de sécurité qui peuvent nuire à la confiance des clients et des partenaires.
+- Protéger la réputation de l'organisation en montrant un engagement envers la sécurité.
+
+---
+
+## Fondamentaux de la sécurité informatique
+#### Les enjeux et les risques
+<br>
+
+
+
+<div style="font-size:27px">
+
+**Enjeux de la sécurité informatique**
+
+</div>
+
+<div style="font-size:27px">
+
+5. ***Innovation et compétitivité :***
+
+- Protéger les innovations et les propriétés intellectuelles contre l'espionnage industriel et le vol.
+- Maintenir un avantage concurrentiel en sécurisant les informations stratégiques.
+
+---
+## Fondamentaux de la sécurité informatique
+#### Les enjeux et les risques
+<br>
+
+<div style="font-size:27px">
+
+**Risques de la sécurité informatique**
+
+1. ***Cyberattaques :***
+
+- **Malware** : logiciels malveillants comme les virus, les ransomwares et les chevaux de Troie qui peuvent endommager ou compromettre les systèmes.
+- **Phishing** : tentatives de fraude pour obtenir des informations sensibles en se faisant passer pour des entités de confiance.
+- **Attaques DDoS** : attaques par déni de service distribué visant à rendre un service ou un réseau indisponible en le submergeant de trafic.
+
+---
+
+## Fondamentaux de la sécurité informatique
+#### Les enjeux et les risques
+<br>
+
+<div style="font-size:27px">
+
+**Risques de la sécurité informatique**
+
+</div>
+
+<div style="font-size:22px">
+
+2. ***Vulnérabilités et exploits :***
+
+- **Failles de sécurité :** vulnérabilités dans les logiciels et les systèmes qui peuvent être exploitées par des attaquants.
+- **Zero-day :** failles inconnues des développeurs et des utilisateurs, mais exploitées par les cybercriminels.
+
+3. ***Insider threats :***
+
+- **Menaces internes :** employés ou partenaires ayant des accès privilégiés qui abusent de leurs droits pour compromettre les systèmes ou voler des données.
+
+
+---
+## Fondamentaux de la sécurité informatique
+#### Les enjeux et les risques
+<br>
+
+<div style="font-size:27px">
+
+**Risques de la sécurité informatique**
+
+</div>
+
+<div style="font-size:21px">
+
+4. ***Perte de données :***
+
+- **Fuites de données :** exfiltration d'informations sensibles vers des entités non autorisées.
+- **Destruction de données :** perte définitive de données critiques à cause de malwares ou d'erreurs humaines.
+
+5. ***Non-conformité réglementaire :***
+
+- **Sanctions légales :** amendes et poursuites judiciaires en cas de non-respect des régulations en matière de sécurité et de protection des données.
+- **Perte de confiance :** diminution de la confiance des clients et des partenaires en cas de non-conformité.
+
+---
+## Fondamentaux de la sécurité informatique
+#### Principales menaces et vulnérabilités
+<br>
+
+<div style="font-size:27px">
+
+**Principales Menaces**
+
+</div>
+
+<div style="font-size:23px">
+
+1. ***Malware (Logiciels malveillants) :***
+
+- **Virus :** Programmes qui se répliquent en infectant d'autres fichiers exécutables et peuvent causer des dommages variés.
+- **Trojans (Chevaux de Troie) :** Logiciels déguisés en applications légitimes, mais qui exécutent des actions malveillantes à l'insu de l'utilisateur.
+- **Ransomware :** Logiciels qui chiffrent les fichiers de la victime et exigent une rançon pour fournir la clé de déchiffrement.
+- **Spyware :** Logiciels qui espionnent les activités de l'utilisateur et collectent des informations sensibles.
+
+
+
+</div>
+
+---
+
+
+## Fondamentaux de la sécurité informatique
+#### Principales menaces et vulnérabilités
+<br>
+
+<div style="font-size:27px">
+
+**Principales Menaces**
+
+</div>
+
+<div style="font-size:21px">
+
+2. ***Phishing :***
+
+- **Emails de phishing :** Tentatives de fraude par email visant à obtenir des informations sensibles comme des mots de passe ou des informations de carte de crédit.
+- **Spear phishing :** Attaques ciblées sur des individus spécifiques, souvent bien documentées et personnalisées.
+
+3. ***Attaques par déni de service (DoS) et déni de service distribué (DDoS) :***
+
+- **DoS :** Attaques visant à rendre un service ou un réseau indisponible en le surchargeant de requêtes.
+- **DDoS :** Attaques similaires à DoS, mais lancées à partir de multiples systèmes infectés par des malwares.
+
+
+
+</div>
+
+---
+
+## Fondamentaux de la sécurité informatique
+#### Principales menaces et vulnérabilités
+<br>
+
+<div style="font-size:27px">
+
+**Principales Menaces**
+
+</div>
+
+
+<div style="font-size:23px">
+
+4. ***Menaces internes :***
+
+- Insider threats : Employés ou partenaires internes ayant accès aux systèmes et données, qui peuvent abuser de leurs privilèges pour des gains personnels ou par mécontentement.
+
+5. ***Attaques par force brute :***
+
+- Tentatives de deviner des mots de passe en essayant systématiquement toutes les combinaisons possibles.
+
+
+</div>
+
+---
+
+
+## Fondamentaux de la sécurité informatique
+#### Principales menaces et vulnérabilités
+<br>
+
+<div style="font-size:27px">
+
+**Principales Vulnérabilités**
+
+</div>
+
+<div style="font-size:19px">
+
+1. ***Vulnérabilités logicielles :***
+
+- **Failles zero-day :** Vulnérabilités non connues des développeurs du logiciel au moment de leur exploitation par les attaquants.
+- **Failles de sécurité non corrigées :** Vulnérabilités pour lesquelles des correctifs existent, mais qui n'ont pas été appliqués par les utilisateurs.
+
+2. ***Erreurs de configuration :***
+
+- **Mauvaise configuration des pare-feux :** Politiques de sécurité trop permissives ou incorrectement configurées.
+- **Paramètres par défaut non modifiés :** Utilisation de mots de passe ou de configurations par défaut, souvent bien connus des attaquants.
+
+
+</div>
+
+---
+
+## Fondamentaux de la sécurité informatique
+#### Principales menaces et vulnérabilités
+<br>
+
+<div style="font-size:27px">
+
+**Principales Vulnérabilités**
+
+</div>
+
+<div style="font-size:20px">
+
+3. ***Problèmes d'authentification et de gestion des accès :***
+
+- **Mots de passe faibles :** Utilisation de mots de passe simples et faciles à deviner.
+- **Absence de multi-factor authentication (MFA) :** Dépendance uniquement sur les mots de passe pour la sécurité des comptes.
+
+4. ***Vulnérabilités réseau :***
+
+- **Sniffing de réseau :** Interception de données sensibles transmises en clair sur le réseau.
+- **Man-in-the-Middle (MitM) :** Interception et modification des communications entre deux parties sans qu'elles en soient conscientes.
+
+
+</div>
+
+---
+
+
+## Fondamentaux de la sécurité informatique
+#### Principales menaces et vulnérabilités
+<br>
+
+<div style="font-size:27px">
+
+**Principales Vulnérabilités**
+
+</div>
+
+<div style="font-size:21px">
+
+5. ***Problèmes de sécurité physique :***
+
+- **Accès physique non sécurisé :** Accès non contrôlé aux équipements informatiques, permettant des manipulations matérielles ou des vols de données.
+
+6. Scripts et injections :
+
+- **SQL injection :** Insertion de code SQL malveillant dans des requêtes pour accéder ou manipuler des bases de données.
+- **Cross-site scripting (XSS) :** Insertion de scripts malveillants dans les pages web vues par d'autres utilisateurs.
+
+
+</div>
+
+---
+
+## Fondamentaux de la sécurité informatique
+#### Principales menaces et vulnérabilités
+<br>
+
+
+<div style="font-size:27px">
+
+**Cartographie des attaques**
+
+</div>
+
+<div style="font-size:25px">
+
+<br>
+
+https://cybermap.kaspersky.com/fr
+
+<br>
+
+https://threatmap.checkpoint.com/
+
+<br>
+
+https://threatmap.fortiguard.com/
+
+<br>
+
+https://www.digitalattackmap.com/
+
+</div>
+
+
+---
+
+## Fondamentaux de la sécurité informatique
+#### Principales menaces et vulnérabilités
+<br>
+
+
+<div style="font-size:30px">
+
+**Attaques importantes recentes**
+
+</div>
+
+<div style="font-size:23px">
+
+<br>
+
+- **NOTPETYA** -> Attaque du 27 Juin 2017
+
+<br>
+
+- **WANNACRY** -> Attaques des 12 et 13 mai 2017
+
+<br>
+
+- **SONY** -> Attaque de Novembre 2014
+
+
+</div>
+
+
+---
+
+## Fondamentaux de la sécurité informatique
+#### Principales menaces et vulnérabilités
+<br>
+
+
+<div style="font-size:27px">
+
+**Statistiques des attaques**
+
+</div>
+
+<div style="font-size:24px">
+
+<br>
+
+***Concernant les particuliers***
+
+- Source https://silicon.fr
+- 3 minutes en moyenne pour pirater un nouvel objet connecté
+- 1,1 million de victimes de fraude à la carte bancaire par an
+- 83% des smartphones infectés au 2eme semestre 2016
+- 65 vols de données par seconde
+- 41% de succès lors d’attaque par RansomWare
+- 201 jours en moyenne pour découvrir une cyberattaque
+
+
+</div>
+
+
+---
+
+
+## Fondamentaux de la sécurité informatique
+#### Principales menaces et vulnérabilités
+<br>
+
+
+<div style="font-size:27px">
+
+**Statistiques des attaques**
+
+</div>
+
+<div style="font-size:23px">
+
+<br>
+
+***Concernant les entreprises***
+- 77% des organisations mondiales ont été victimes d’au moins une cyberattaque réussie en 2017
+- https://cyber-edge.com/wp-content/uploads/2018/03/CyberEdge2018-CDR.pdf
+- 23% des entreprises de type PME ont eu un incident de sécurité à cause d’objets connectés (IoT)
+- https://keepersecurity.com/fr_FR2017-State-Cybersecurity-SmallMedium-Businesses-SMB.html
+- 95% des attaques web comportent de l’ingénierie sociale
+- https://www.proofpoint.com/sites/default/files/pfpt-fr-tr-thehuman-factor-2018.pdf
+
+
+</div>
+
+
+---
+
+## Fondamentaux de la sécurité informatique
+#### Principales menaces et vulnérabilités
+<br>
+
+
+<div style="font-size:27px">
+
+**Statistiques des attaques**
+
+</div>
+
+<div style="font-size:22px">
+
+<br>
+
+***Concernant les entreprises***
+
+- 5 à 10% du budget d’une entreprise est consacré à la cybersécurité
+- https://experiences.microsoft.fr/business/confiance-numeriquebusiness cybersecurite-chiffres-cles/
+- 800 000€ de coût en moyenne lors d’une violation de sécurité
+- https://experiences.microsoft.fr/business/confiance-numeriquebusinesscybersecurite-chiffres-cles/
+- 35% des incidents de cybersécurité sont dus à des collaborateurs
+- https://experiences.microsoft.fr/business/confiance-numeriquebusiness/cybersecurite-chiffres-cles/
+
+
+</div>
+
+
+---
+
+## Fondamentaux de la sécurité informatique
+#### Principales menaces et vulnérabilités
+<br>
+
+
+<div style="font-size:27px">
+
+**Autres sources**
+
+</div>
+
+<div style="font-size:27px">
+
+<br>
+
+- https://experiences.microsoft.fr/articles/cybersecurite/cybersecurite-chiffres-cles/
+
+
+- https://cyberedgegroup.com/cdr/
+
+</div>
+
+---
+
+## Fondamentaux de la sécurité informatique
+#### Principales menaces et vulnérabilités
+<br>
+
+
+<div style="font-size:27px">
+
+**Mesures de Protection**
+
+</div>
+
+<div style="font-size:20px">
+
+<br>
+
+- **Mises à jour régulières et correctifs de sécurité** : Maintenir tous les logiciels et systèmes à jour.
+- **Politiques de mot de passe robustes** : Exiger des mots de passe complexes et utiliser l'authentification multi-facteurs.
+- **Configuration sécurisée** : S'assurer que les systèmes sont correctement configurés et sécurisés.
+- **Sécurité physique** : Protéger les équipements et les données par des contrôles d'accès physiques.
+- **Formation des employés** : Former et sensibiliser régulièrement les employés aux menaces de sécurité.
+- **Chiffrement des données** : Utiliser des techniques de chiffrement pour protéger les données sensibles.
+- **Contrôles d'accès** : Implémenter des contrôles d'accès stricts basés sur les rôles et les besoins.
+- **Surveillance et journalisation** : Mettre en place des systèmes de surveillance et de journalisation pour détecter et répondre aux incidents de sécurité.
+
+</div>
+
+---
+
+## Fondamentaux de la sécurité informatique
+#### Concepts de base en sécurité
+<br>
+
+<div style="font-size:27px">
+
+**Confidentialité, intégrité et disponibilité (CIA)**
+
+</div>
+
+<br>
+
+<div style="font-size:26px">
+
+- Le modèle de sécurité CIA (Confidentialité, Intégrité et Disponibilité) est un cadre fondamental utilisé pour guider les politiques de sécurité de l'information au sein d'une organisation. 
+- Chacun de ces trois piliers vise à protéger différents aspects des informations et des systèmes informatiques.
+
+</div>
+
+---
+## Fondamentaux de la sécurité informatique
+#### Concepts de base en sécurité
+
+
+
+<div style="font-size:25px">
+
+1. ***Confidentialité (Confidentiality)***
+
+</div>
+
+<div style="font-size:18px">
+
+- **Définition :** La confidentialité consiste à garantir que les informations ne sont accessibles qu'aux personnes autorisées et à prévenir tout accès non autorisé.
+
+- **Objectif :**
+   - Protéger les données sensibles contre les intrusions, le vol et la divulgation non autorisée.
+   - Assurer que seules les personnes ayant les droits nécessaires peuvent consulter ou manipuler les informations.
+
+- **Mécanismes de protection :**
+
+   - **Chiffrement :** Utilisation de techniques de cryptographie pour rendre les données illisibles pour les utilisateurs non autorisés.
+   - **Contrôle d'accès :** Mise en œuvre de systèmes d'authentification et d'autorisation pour vérifier les identités et limiter l'accès aux informations sensibles.
+   - **Politiques de confidentialité :** Établir des règles strictes sur qui peut accéder aux informations et sous quelles conditions.
+
+</div>
+
+---
+
+## Fondamentaux de la sécurité informatique
+#### Concepts de base en sécurité
+
+<div style="font-size:25px">
+
+2. ***Intégrité (Integrity)***
+
+</div>
+
+<div style="font-size:18px">
+
+- **Définition :** L'intégrité vise à maintenir la précision et la complétude des données tout au long de leur cycle de vie.
+
+- **Objectif :**
+   - Empêcher la modification non autorisée ou non détectée des données.
+   - Garantir que les informations sont fiables et exactes.
+
+- **Mécanismes de protection :**
+
+   - **Contrôles de version :** Suivre les modifications apportées aux données et permettre la restauration des versions antérieures en cas de besoin.
+   - **Sommes de contrôle et hachage :** Utiliser des fonctions de hachage pour vérifier que les données n'ont pas été altérées.
+   - **Journalisation et audits :** Enregistrer les modifications et les accès aux données pour pouvoir détecter et analyser les actions suspectes.
+
+</div>
+
+---
+
+## Fondamentaux de la sécurité informatique
+#### Concepts de base en sécurité
+
+<div style="font-size:25px">
+
+3. ***Disponibilité (Availability)***
+
+</div>
+
+<div style="font-size:18px">
+
+- **Définition :** La disponibilité garantit que les systèmes, les services et les données sont accessibles en temps voulu par les utilisateurs autorisés.
+
+- **Objectif :**
+   - Assurer un accès continu aux informations et aux systèmes nécessaires aux opérations.
+   - Minimiser les temps d'arrêt et les interruptions de service.
+
+- **Mécanismes de protection :**
+
+   - **Redondance :** Utiliser des systèmes et des chemins de communication redondants pour éviter les points de défaillance uniques.
+   - **Plans de reprise après sinistre (DRP) :** Établir des procédures pour restaurer les systèmes et les données après un incident.
+   - **Maintenance régulière et surveillance :** Effectuer des vérifications et des maintenances préventives pour détecter et corriger les problèmes avant qu'ils n'affectent la disponibilité.
+
+</div>
+
+---
+## Fondamentaux de la sécurité informatique
+#### Concepts de base en sécurité
+
+<div style="font-size:25px">
+
+<br>
+
+***Importance du Modèle CIA***
+
+</div>
+
+<br>
+
+<div style="font-size:23px">
+
+Le modèle CIA est essentiel car il offre une approche équilibrée pour sécuriser les systèmes d'information. 
+
+<br>
+
+- **Confidentialité :** Empêche les fuites d'informations et protège la vie privée.
+- **Intégrité :** Assure que les informations sont exactes et fiables, évitant les erreurs et les fraudes.
+- **Disponibilité :** Garantit que les services et les informations sont disponibles lorsque nécessaire, supportant la continuité des activités.
+
+</div>
+
+
+---
+
+## Fondamentaux de la sécurité informatique
+#### Concepts de base en sécurité
+<br>
+
+<div style="font-size:27px">
+
+**Authentification, Autorisation et Audit (AAA)**
+
+</div>
+
+<br>
+
+<div style="font-size:26px">
+
+- Le modèle AAA, qui se compose de l'Authentification, de l'Autorisation et de l'Audit, est un cadre fondamental utilisé pour gérer et renforcer la sécurité des systèmes d'information et des réseaux. 
+- Chacun de ces trois composants joue un rôle crucial dans la protection des ressources informatiques et la garantie de leur utilisation appropriée.
+
+</div>
+
+---
+
+## Fondamentaux de la sécurité informatique
+#### Concepts de base en sécurité
+
+<div style="font-size:25px">
+
+1. ***Authentification (Authentication)***
+
+</div>
+
+<div style="font-size:18px">
+
+- **Définition :** L'authentification est le processus de vérification de l'identité d'un utilisateur, d'un système ou d'un service.
+
+- **Objectif :**
+   - Garantir que seules les entités légitimes peuvent accéder aux systèmes et aux données.
+   - Prévenir l'accès non autorisé en vérifiant l'identité des utilisateurs ou des systèmes.
+
+- **Mécanismes de protection :**
+
+   - **Mots de passe :** Utilisation de mots de passe forts et uniques pour authentifier les utilisateurs.
+   - **Biométrie :** Utilisation de caractéristiques physiques (empreintes digitales, reconnaissance faciale) pour l'authentification.
+   - **Cartes à puce et tokens :** Dispositifs matériels utilisés pour authentifier les utilisateurs.
+   - **Authentification multi-facteurs (MFA) :** Combinaison de plusieurs méthodes d'authentification (par exemple, mot de passe + token).
+
+</div>
+
+---
+
+
+
+## Fondamentaux de la sécurité informatique
+#### Concepts de base en sécurité
+
+<div style="font-size:25px">
+
+2. ***Autorisation (Authorization)***
+
+</div>
+
+<div style="font-size:18px">
+
+- **Définition :** L'autorisation est le processus de détermination des ressources et des services auxquels un utilisateur, un système ou un service authentifié a accès.
+
+- **Objectif :**
+   - Assurer que les utilisateurs ont accès uniquement aux ressources nécessaires pour accomplir leurs tâches.
+   - Prévenir l'accès non autorisé aux ressources sensibles.
+
+- **Mécanismes de protection :**
+
+   - **Contrôle d'accès basé sur les rôles (RBAC) :** Attribution des permissions en fonction des rôles des utilisateurs dans l'organisation.
+   - **Listes de contrôle d'accès (ACL) :** Définition des permissions spécifiques pour les utilisateurs ou les groupes d'utilisateurs.
+   - **Cartes à puce et tokens :** Dispositifs matériels utilisés pour authentifier les utilisateurs.
+   - **Politiques de sécurité :** Établissement de règles claires concernant l'accès aux ressources.
+
+</div>
+
+---
+
+## Fondamentaux de la sécurité informatique
+#### Concepts de base en sécurité
+
+<div style="font-size:25px">
+
+2. ***Audit (Accounting)***
+
+</div>
+
+<div style="font-size:18px">
+
+- **Définition :**  L'audit, ou l'accounting, est le processus de suivi et d'enregistrement des actions et des accès des utilisateurs, des systèmes et des services.
+
+- **Objectif :**
+   - Fournir une traçabilité des actions pour l'analyse des incidents de sécurité et la conformité réglementaire.
+   - Permettre la détection et l'analyse des comportements suspects ou des violations de sécurité.
+
+- **Mécanismes de protection :**
+
+   - **Journaux d'audit (log files) :** Enregistrement détaillé des accès, des actions et des modifications apportées aux systèmes et aux données.
+   - **Systèmes de gestion des informations et des événements de sécurité (SIEM) :** Collecte et analyse centralisée des journaux d'audit pour détecter les incidents de sécurité.
+   - **Rapports et alertes :** Génération de rapports réguliers et envoi d'alertes en cas d'activités suspectes.
+
+</div>
+
+---
+## Fondamentaux de la sécurité informatique
+#### Concepts de base en sécurité
+
+<div style="font-size:25px">
+
+<br>
+
+***Importance du Modèle AAA***
+
+</div>
+
+<br>
+
+<div style="font-size:23px">
+
+Le modèle **AAA** est essentiel pour la gestion de la sécurité des systèmes d'information et des réseaux.
+
+<br>
+
+- **Authentification :** Empêche l'accès non autorisé en vérifiant l'identité des utilisateurs, ce qui est la première ligne de défense contre les intrusions.
+- **Autorisation :** Assure que les utilisateurs authentifiés n'ont accès qu'aux ressources nécessaires, minimisant le risque d'abus ou de compromission des données sensibles.
+- **Audit :** Fournit une traçabilité complète des actions et des accès, facilitant la détection des comportements anormaux, l'analyse des incidents et la conformité réglementaire.
+
+</div>
 
 ---
 
@@ -198,7 +942,6 @@ La sécurité des systèmes d'exploitation (OS) fait référence à un ensemble 
 6. **Utilisation de gestionnaires de version pour les environnements de développement :**
    - Si vous développez ou utilisez des applications basées sur des environnements comme Python, Node.js, etc., utilisez des gestionnaires de version comme `pip` ou `npm` pour gérer les mises à jour des bibliothèques et des dépendances.
 
-
 ---
 
 ## Sécurité des systèmes d'exploitation
@@ -212,7 +955,6 @@ Les principes de moindre privilège sont des principes de sécurité informatiqu
 
 </div>
     
-
 ---
 ## Sécurité des systèmes d'exploitation
 #### Utilisation de comptes avec privilèges minimaux
