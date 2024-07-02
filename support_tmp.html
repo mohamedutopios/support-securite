@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>support.md</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+html,footer,header{
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Custom MD PDF CSS
+ */
+html,footer,header{
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+
+ }
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+<link rel="stylesheet" href="file:///Users/mohamed/Downloads/marp-cyber-securite/R%3A%5C2.Travail%5C1.Enseignement%5CCours%5C_1.Outils%5C2.Developpement%5C1.SCSS%5Cmain.css" type="text/css"><link rel="stylesheet" href="file:///Users/mohamed/Downloads/marp-cyber-securite/D%3A%5Crdaros%5CCours%5C_1.Outils%5C2.Developpement%5C1.SCSS%5Cmain.css" type="text/css">
+</head>
+
+<body>
+    <!-- _class: lead -->
+<!-- _paginate: false -->
+<h1 id="securit%C3%A9-system-et-r%C3%A9seau">Securité System et Réseau</h1>
+<hr>
+<h2 id="sommaire">Sommaire</h2>
+<div style="font-size:35px">
+</div><ul>
+<li>Fondamentaux de la sécurité informatique</li>
+<li>Sécurité des systèmes d'exploitation</li>
+<li>Sécurité réseau</li>
+<li>Cryptographie et gestion des clés</li>
+<li>Gestion des vulnérabilités et des risques</li>
+<li>Sécurité des applications et du développement</li>
+<li>Conformité et normes de sécurité</li>
+</ul>
+
+<hr>
+<!-- _class: lead -->
+<!-- _paginate: false -->
+<h2 id="fondamentaux-de-la-s%C3%A9curit%C3%A9-informatique">Fondamentaux de la sécurité informatique</h2>
+<hr>
+<h2 id="fondamentaux-de-la-s%C3%A9curit%C3%A9-informatique">Fondamentaux de la sécurité informatique</h2>
+<p><strong>Definition</strong></p>
+<div style="font-size:30px">
+</div><ul>
+<li>
+<p>L'architecture logicielle se réfère à la structuration fondamentale d'un système logiciel.</p>
+</li>
+<li>
+<p>Elle consiste en la définition des différents composants logiciels (ou modules), les relations qu'ils entretiennent entre eux, et les principes de conception qui guident leur organisation et leur intégration au sein du système.</p>
+</li>
+<li>
+<p>Imaginez l'architecture logicielle comme le plan d'un bâtiment, décrivant non seulement les pièces (composants logiciels) mais aussi comment elles sont connectées (communications) et où elles sont placées (déploiement).</p>
+</li>
+</ul>
+
+<hr>
+<h2 id="architecture-applicative">Architecture Applicative</h2>
+<h4 id="quel-type-darchitecture-logicielle">Quel type d’architecture logicielle?</h4>
+<br>
+<div style="font-size:22px">
+</div><center>
+<img src="file:///Users/mohamed/Downloads/marp-cyber-securite/assets/image1.png" width="700px">
+</center>
+<hr>
+<!-- _class: lead -->
+<!-- _paginate: false -->
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="la-d%C3%A9finition">La Définition ?</h4>
+<br>
+<div style="font-size:35px">
+</div><p>La sécurité des systèmes d'exploitation (OS) fait référence à un ensemble de pratiques, de mesures et de technologies visant à protéger les systèmes d'exploitation contre les menaces potentielles, telles que les accès non autorisés, les attaques de logiciels malveillants, les vulnérabilités de sécurité et les erreurs de configuration.</p>
+
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="les-aspects-essentiels">Les aspects essentiels</h4>
+<br>
+<div style="font-size:30px">
+</div><div class="columns">
+</div><div>
+</div><ul>
+<li>
+<p>Authentification et autorisation</p>
+</li>
+<li>
+<p>Protection contre les logiciels malveillants</p>
+</li>
+<li>
+<p>Mises à jour de sécurité</p>
+</li>
+<li>
+<p>Chiffrement des données</p>
+</li>
+<li>
+<p>Surveillance et journalisation</p>
+</li>
+</ul>
+
+<div>
+</div><ul>
+<li>
+<p>Gestion des vulnérabilités</p>
+</li>
+<li>
+<p>Sécurisation des configurations</p>
+</li>
+<li>
+<p>Sécurisation des réseaux</p>
+</li>
+<li>
+<p>Éducation et sensibilisation</p>
+</li>
+</ul>
+
+
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="mises-%C3%A0-jour-r%C3%A9guli%C3%A8res">Mises à jour régulières</h4>
+<br>
+<div style="font-size:23px">
+</div><ol>
+<li><strong>Utilisation de gestionnaires de paquets :</strong>
+<ul>
+<li>
+<p>Sur les distributions comme Ubuntu, utilisez <code>apt</code> pour mettre à jour les paquets système :</p>
+<pre class="hljs"><code><div>sudo apt update
+sudo apt upgrade
+</div></code></pre>
+</li>
+<li>
+<p>Sur les distributions comme CentOS/RHEL, utilisez <code>yum</code> ou <code>dnf</code> :</p>
+<pre class="hljs"><code><div>sudo yum update
+</div></code></pre>
+<p>ou</p>
+<pre class="hljs"><code><div>sudo dnf update
+</div></code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="mises-%C3%A0-jour-r%C3%A9guli%C3%A8res">Mises à jour régulières</h4>
+<br>
+<div style="font-size:25px">
+</div><ol start="2">
+<li>
+<p><strong>Configurer les mises à jour automatiques :</strong></p>
+<ul>
+<li>Vous pouvez configurer votre système pour qu'il vérifie et installe automatiquement les mises à jour de sécurité. Par exemple, sur Ubuntu, vous pouvez utiliser <code>unattended-upgrades</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Vérifier régulièrement les mises à jour :</strong></p>
+<ul>
+<li>Planifiez un horaire régulier pour vérifier les mises à jour disponibles et les appliquer. Par exemple, configurez une tâche cron pour exécuter <code>apt update</code> et <code>apt upgrade</code> toutes les semaines.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="mises-%C3%A0-jour-r%C3%A9guli%C3%A8res">Mises à jour régulières</h4>
+<div style="font-size:23px">
+</div><ol start="4">
+<li>
+<p><strong>Mises à jour des applications tierces :</strong></p>
+<ul>
+<li>Si vous utilisez des logiciels tiers ou des applications non incluses dans les dépôts officiels de votre distribution, assurez-vous de suivre les instructions de mise à jour fournies par les développeurs de ces applications.</li>
+</ul>
+</li>
+<li>
+<p><strong>Surveillance des annonces de sécurité :</strong></p>
+<ul>
+<li>Abonnez-vous aux listes de diffusion de sécurité de votre distribution Linux pour être informé des nouvelles vulnérabilités et des correctifs disponibles.</li>
+</ul>
+</li>
+<li>
+<p><strong>Utilisation de gestionnaires de version pour les environnements de développement :</strong></p>
+<ul>
+<li>Si vous développez ou utilisez des applications basées sur des environnements comme Python, Node.js, etc., utilisez des gestionnaires de version comme <code>pip</code> ou <code>npm</code> pour gérer les mises à jour des bibliothèques et des dépendances.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="utilisation-de-comptes-avec-privil%C3%A8ges-minimaux">Utilisation de comptes avec privilèges minimaux</h4>
+<br>
+<div>
+</div><p>Les principes de moindre privilège sont des principes de sécurité informatique visant à limiter les droits et les privilèges des utilisateurs, des applications et des processus au niveau minimum nécessaire pour accomplir leurs tâches spécifiques.</p>
+
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="utilisation-de-comptes-avec-privil%C3%A8ges-minimaux">Utilisation de comptes avec privilèges minimaux</h4>
+<br>
+<div style="font-size:25px">
+</div><ol>
+<li><strong>Privilèges administratifs restreints :</strong></li>
+</ol>
+<ul>
+<li>Limitez l'accès administratif aux seules personnes et aux seules ressources nécessaires pour effectuer des tâches administratives spécifiques. Évitez de donner des droits d'administration complets à des utilisateurs qui n'en ont pas besoin.</li>
+</ul>
+<ol start="2">
+<li><strong>Contrôle d'accès basé sur le rôle (RBAC) :</strong></li>
+</ol>
+<ul>
+<li>Utilisez le RBAC pour attribuer des droits d'accès en fonction des rôles spécifiques des utilisateurs dans l'organisation. Cela garantit que chaque utilisateur a uniquement les permissions nécessaires pour accomplir ses responsabilités.</li>
+</ul>
+
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="utilisation-de-comptes-avec-privil%C3%A8ges-minimaux">Utilisation de comptes avec privilèges minimaux</h4>
+<br>
+<div style="font-size:27px">
+</div><ol start="3">
+<li><strong>Principe du besoin de savoir :</strong></li>
+</ol>
+<ul>
+<li>Appliquez ce principe en limitant l'accès à l'information uniquement aux personnes qui ont besoin de connaître cette information pour effectuer leur travail.</li>
+</ul>
+<ol start="4">
+<li><strong>Examen des privilèges :</strong></li>
+</ol>
+<ul>
+<li>Passez régulièrement en revue les privilèges accordés aux utilisateurs et aux applications pour vous assurer qu'ils restent pertinents et nécessaires.</li>
+</ul>
+
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="utilisation-de-comptes-avec-privil%C3%A8ges-minimaux">Utilisation de comptes avec privilèges minimaux</h4>
+<br>
+<div style="font-size:27px">
+</div><ol start="5">
+<li><strong>Privilèges par défaut :</strong></li>
+</ol>
+<ul>
+<li>Configurez les systèmes et les applications avec les privilèges par défaut les plus bas possibles, puis accordez des privilèges supplémentaires au cas par cas, si nécessaire.</li>
+</ul>
+<ol start="6">
+<li><strong>Surveillance et audit :</strong></li>
+</ol>
+<ul>
+<li>Surveillez l'utilisation des privilèges et auditez régulièrement les activités des utilisateurs et des applications pour détecter toute anomalie ou utilisation abusive.</li>
+</ul>
+
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="utilisation-de-comptes-avec-privil%C3%A8ges-minimaux">Utilisation de comptes avec privilèges minimaux</h4>
+<br>
+<center>
+<img src="file:///Users/mohamed/Downloads/marp-cyber-securite/assets/demo.gif" width="700px">
+</center>
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="contr%C3%B4le-des-acc%C3%A8s">Contrôle des accès</h4>
+<br>
+<ul>
+<li>Les modèles de contrôle d'accès sont essentiels pour gérer et restreindre l'accès aux ressources d'un système informatique.</li>
+<li>Les principaux modèles de contrôle d'accès : Discretionary Access Control (DAC), Mandatory Access Control (MAC) et Role-Based Access Control (RBAC).</li>
+</ul>
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="contr%C3%B4le-des-acc%C3%A8s">Contrôle des accès</h4>
+<div style="font-size:23px">
+</div><h3 id="1-discretionary-access-control-dac">1. Discretionary Access Control (DAC)</h3>
+<br>
+<p><strong>Définition</strong>:<br>
+Le modèle de contrôle d'accès discrétionnaire (DAC) est un modèle où les propriétaires de ressources ou d'objets ont le pouvoir de décider qui peut accéder à leurs ressources et avec quels privilèges.<br>
+<br></p>
+<p><strong>Caractéristiques</strong>:</p>
+<ul>
+<li><strong>Flexibilité</strong> : Les utilisateurs ont la liberté de partager leurs ressources avec d'autres.</li>
+<li><strong>Contrôle par l'utilisateur</strong> : Le contrôle d'accès est basé sur les identités des utilisateurs et les permissions définies par les propriétaires des ressources.</li>
+<li><strong>Permissions basées sur les fichiers</strong> : Les permissions sont souvent gérées par les propriétaires des fichiers et des répertoires.</li>
+</ul>
+
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="contr%C3%B4le-des-acc%C3%A8s">Contrôle des accès</h4>
+<br>
+<div style="font-size:30px">
+</div><p><strong>Exemple</strong>:</p>
+<p>Environnement UNIX/Linux où les propriétaires de fichiers peuvent définir les permissions d'accès pour leurs fichiers en utilisant des commandes comme <code>chmod</code>.</p>
+<pre class="hljs"><code><div>chmod 755 fichier.txt
+</div></code></pre>
+
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="contr%C3%B4le-des-acc%C3%A8s">Contrôle des accès</h4>
+<div style="font-size:22px">
+</div><h3 id="2-mandatory-access-control-mac">2. Mandatory Access Control (MAC)</h3>
+<br>
+<p><strong>Définition</strong>:</p>
+<p>Le modèle de contrôle d'accès obligatoire (MAC) est un modèle où l'accès aux ressources est contrôlé par des politiques de sécurité centralisées définies par l'administration système et non par les propriétaires des ressources.</p>
+<br>
+<p><strong>Caractéristiques</strong>:</p>
+<ul>
+<li><strong>Centralisation</strong> : Les décisions d'accès sont prises par un administrateur central et non par les utilisateurs individuels.</li>
+<li><strong>Labels de sécurité</strong> : Les objets (fichiers, données) et sujets (utilisateurs, processus) sont assignés des labels de sécurité.</li>
+<li><strong>Politiques strictes</strong> : Les politiques de sécurité sont strictes et non modifiables par les utilisateurs.</li>
+</ul>
+
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="contr%C3%B4le-des-acc%C3%A8s">Contrôle des accès</h4>
+<br>
+<div style="font-size:30px">
+</div><p><strong>Exemple</strong>:<br>
+SElinux (Security-Enhanced Linux) est un exemple de mise en œuvre de MAC où les politiques de sécurité sont définies par l'administrateur et appliquées strictement.</p>
+<pre class="hljs"><code><div>sestatus
+</div></code></pre>
+
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="contr%C3%B4le-des-acc%C3%A8s">Contrôle des accès</h4>
+<div style="font-size:21px">
+</div><h3 id="3-role-based-access-control-rbac">3. Role-Based Access Control (RBAC)</h3>
+<br>
+<p><strong>Définition</strong>:<br>
+Le modèle de contrôle d'accès basé sur les rôles (RBAC) est un modèle où les permissions sont associées à des rôles spécifiques et les utilisateurs se voient attribuer ces rôles. Les utilisateurs obtiennent les permissions en fonction de leurs rôles.</p>
+<br>
+<p><strong>Caractéristiques</strong>:</p>
+<ul>
+<li><strong>Rôles et Permissions</strong> : Les permissions sont assignées à des rôles plutôt qu'à des utilisateurs individuels.</li>
+<li><strong>Gestion simplifiée</strong> : La gestion des permissions est simplifiée en attribuant ou retirant des rôles aux utilisateurs.</li>
+<li><strong>Séparation des responsabilités</strong> : Facilite la séparation des responsabilités et la conformité réglementaire.</li>
+</ul>
+
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="contr%C3%B4le-des-acc%C3%A8s">Contrôle des accès</h4>
+<div style="font-size:26px">
+</div><br>
+<p><strong>Exemple  :</strong></p>
+<br>
+<ul>
+<li>Pour des contrôles d'accès plus fins que ceux offerts par les permissions de base (rwx), utilisez les ACL pour définir des permissions sur des fichiers et des répertoires spécifiques.</li>
+<li>Cela permet de limiter l'accès en fonction des besoins spécifiques des rôles.<br>
+<br></li>
+</ul>
+<p><strong>Utilisation de setfacl pour ajouter des ACL :</strong></p>
+<pre class="hljs"><code><div>setfacl -m u:utilisateur1:rw fichier.txt
+</div></code></pre>
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="contr%C3%B4le-des-acc%C3%A8s">Contrôle des accès</h4>
+<br>
+<center>
+<img src="file:///Users/mohamed/Downloads/marp-cyber-securite/assets/demo.gif" width="700px">
+</center>
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="d%C3%A9sactivation-des-services-inutiles">Désactivation des services inutiles</h4>
+<br>
+<div style="font-size:35px">
+</div><p>La désactivation des services inutiles et la fermeture des ports non utilisés sur Linux sont des pratiques essentielles pour renforcer la sécurité et réduire la surface d'attaque de votre système</p>
+
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="d%C3%A9sactivation-des-services-inutiles">Désactivation des services inutiles</h4>
+<div style="font-size:30px">
+</div><br>
+<ul>
+<li>
+<p><strong>Principes de la désactivation des services inutiles :</strong></p>
+<ul>
+<li><strong>Moins de services</strong> en cours d'exécution signifie moins de points d'entrée potentiels pour les attaquants.</li>
+<li>Chaque service ou processus actif représente une surface d'attaque supplémentaire pour des vulnérabilités potentielles.</li>
+<li>En désactivant <strong>les services non essentiels</strong>, vous réduisez la probabilité qu'un service mal configuré ou non mis à jour soit exploité pour compromettre votre système.</li>
+</ul>
+</li>
+</ul>
+
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="d%C3%A9sactivation-des-services-inutiles">Désactivation des services inutiles</h4>
+<br>
+<center>
+<img src="file:///Users/mohamed/Downloads/marp-cyber-securite/assets/demo.gif" width="700px">
+</center>
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="chiffrement-des-donn%C3%A9es">Chiffrement des données</h4>
+<br>
+<div style="font-size:35px">
+</div><ul>
+<li>Le chiffrement est une technique essentielle en sécurité informatique pour protéger les données contre l'accès non autorisé.</li>
+<li>Il existe deux principaux types de chiffrement : le chiffrement symétrique et le chiffrement asymétrique.</li>
+</ul>
+
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="chiffrement-des-donn%C3%A9es">Chiffrement des données</h4>
+<br>
+<div style="font-size:26px">
+</div><p><strong>Définition</strong>:<br>
+Le chiffrement symétrique utilise une seule clé pour chiffrer et déchiffrer les données. Cette clé doit être partagée entre les parties communicantes de manière sécurisée.<br>
+<br></p>
+<p><strong>Caractéristiques</strong>:</p>
+<ul>
+<li><strong>Clé Unique</strong> : La même clé est utilisée pour le chiffrement et le déchiffrement.</li>
+<li><strong>Rapidité</strong> : Les algorithmes de chiffrement symétrique sont généralement plus rapides et nécessitent moins de ressources que les algorithmes asymétriques.</li>
+<li><strong>Sécurité de la Clé</strong> : La sécurité repose entièrement sur le secret de la clé. Si la clé est compromise, les données chiffrées le sont également.</li>
+</ul>
+
+<hr>
+<h2 id="s%C3%A9curit%C3%A9-des-syst%C3%A8mes-dexploitation">Sécurité des systèmes d'exploitation</h2>
+<h4 id="chiffrement-des-donn%C3%A9es">Chiffrement des données</h4>
+<br>
+<div style="font-size:26px">
+</div><p><strong>Définition</strong>:<br>
+Le chiffrement symétrique utilise une seule clé pour chiffrer et déchiffrer les données. Cette clé doit être partagée entre les parties communicantes de manière sécurisée.<br>
+<br></p>
+<p><strong>Caractéristiques</strong>:</p>
+<ul>
+<li><strong>Clé Unique</strong> : La même clé est utilisée pour le chiffrement et le déchiffrement.</li>
+<li><strong>Rapidité</strong> : Les algorithmes de chiffrement symétrique sont généralement plus rapides et nécessitent moins de ressources que les algorithmes asymétriques.</li>
+<li><strong>Sécurité de la Clé</strong> : La sécurité repose entièrement sur le secret de la clé. Si la clé est compromise, les données chiffrées le sont également.</li>
+</ul>
+
+<hr>
+<!-- _class: lead -->
+<!-- _paginate: false -->
+<h2 id="int%C3%A9gration-continue---deploiement-continu-ci-cd">Intégration Continue - Deploiement Continu (CI-CD)</h2>
+<hr>
+<h2 id="ci-cd">CI-CD</h2>
+<h4 id="d%C3%A9finition">Définition</h4>
+<br>
+<div style="font-size:40px">
+</div><br>
+<p>L’approche CI/CD permet d’augmenter la fréquence de distribution des applications grâce à l’introduction de l’automatisation au niveau des étapes de développement des applications.</p>
+
+<hr>
+<h2 id="ci-cd">CI-CD</h2>
+<h4 id="d%C3%A9finition">Définition</h4>
+<div style="font-size:22px">
+</div><ul>
+<li>
+<p><strong>Intégration continue</strong></p>
+<ul>
+<li>Une méthode de développement logiciel dans laquelle le logiciel est reconstruit et test ́e `a chaque modification apportée par un programmeur.</li>
+</ul>
+</li>
+<li>
+<p><strong>Livraison continue</strong></p>
+<ul>
+<li>La livraison continue est une approche dans laquelle l’intégration continue associée à des techniques de déploiement automatiques assurent une mise en production rapide et fiable du logiciel.</li>
+</ul>
+</li>
+<li>
+<p><strong>Déploiement continu</strong></p>
+<ul>
+<li>Le déploiement continu est une approche dans laquelle chaque modification apportée par un programmeur passe automatiquement toute la chaîne allant des tests à la mise en production. Il n’y a plus d’intervention humaine.</li>
+</ul>
+</li>
+</ul>
+
+<hr>
+<h2 id="ci-cd">CI-CD</h2>
+<h4 id="les-avantages-ci-cd">Les avantages CI-CD</h4>
+<div style="font-size:40px">
+</div><br>
+<ul>
+<li><strong>Accélérer le Time-to-Market</strong> (le temps de développement et de mise en production d'une fonctionnalité).</li>
+<li><strong>Réduire les erreurs</strong> lors des livraisons.</li>
+<li><strong>Assurer une continuité</strong> de service des applications.</li>
+</ul>
+
+<hr>
+<h2 id="ci-cd">CI-CD</h2>
+<h4 id="les-principes-etapes-du-ci-cd">Les principes etapes du CI-CD</h4>
+<div style="font-size:35px">
+</div><ol>
+<li><strong>Récupération :</strong> code source récupéré du gestionnaire</li>
+<li><strong>Création :</strong> compilation de l’application</li>
+<li><strong>Test :</strong> test du code et notamment tests automatisés</li>
+<li><strong>Lancement :</strong> distribution de l’application au référentiel</li>
+<li><strong>Déploiement :</strong> déploiement du code en production</li>
+<li><strong>Validation et conformité :</strong> ces étapes de validation sont à adapter en fonction des besoins de l’entreprise</li>
+</ol>
+
+<hr>
+<h2 id="ci-cd">CI-CD</h2>
+<h4 id="les-outils-ci-cd">Les outils CI-CD</h4>
+<br>
+<center>
+<img src="file:///Users/mohamed/Downloads/marp-cyber-securite/assets/cicd.png" width="850px">
+</center>
+<hr>
+<h2 id="ci-cd">CI-CD</h2>
+<h4 id="les-outils-ci-cd">Les outils CI-CD</h4>
+<br>
+<center>
+<img src="file:///Users/mohamed/Downloads/marp-cyber-securite/assets/ci-cd.jpg" width="700px">
+</center>
+<hr>
+<h2 id="ci-cd">CI-CD</h2>
+<h4 id="les-outils-ci-cd">Les outils CI-CD</h4>
+<br>
+<center>
+<img src="file:///Users/mohamed/Downloads/marp-cyber-securite/assets/ci-cd2.jpg" width="700px">
+</center>
+<hr>
+<h2 id="ci-cd">CI-CD</h2>
+<h4 id="les-outils-ci-cd">Les outils CI-CD</h4>
+<br>
+<center>
+<img src="file:///Users/mohamed/Downloads/marp-cyber-securite/assets/ci-cd3.jpg" width="700px">
+</center>
+<hr>
+<h2 id="ci-cd">CI-CD</h2>
+<h4 id="les-outils-ci-cd">Les outils CI-CD</h4>
+<br>
+<center>
+<img src="file:///Users/mohamed/Downloads/marp-cyber-securite/assets/ci-cd4.jpg" width="700px">
+</center>
+
+</body>
+
+</html>
