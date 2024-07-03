@@ -821,7 +821,6 @@ Le modèle **AAA** est essentiel pour la gestion de la sécurité des systèmes 
 ---
 
 
-
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
