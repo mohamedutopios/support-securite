@@ -849,33 +849,30 @@ La sécurité des systèmes d'exploitation (OS) fait référence à un ensemble 
 
 <br>
 
-<div style="font-size:30px">
+<div style="font-size:25px">
 
 <div class="columns">
 
 <div>
 
-- Authentification et autorisation 
+ 1. **Mise à jour régulière du système**
+ 2. **Configurer un pare-feu**
+ 3. **Désactiver les services inutilisés**
+ 4. **Configurer SSH en toute sécurité**
+ 5. **Configurer l'authentification multi-facteurs (MFA)**
+ 6. **Limiter les permissions des utilisateurs**
 
-- Protection contre les logiciels malveillants 
-
-- Mises à jour de sécurité 
-
-- Chiffrement des données
-
-- Surveillance et journalisation
 
 </div>
 
 <div>
 
-- Gestion des vulnérabilités 
-
-- Sécurisation des configurations 
-
-- Sécurisation des réseaux
-
-- Éducation et sensibilisation
+ 7. **Configurer les journaux de sécurité**
+ 8. **Configurer les sauvegardes régulières**
+ 9. **Limiter l'accès physique**
+ 10. **Utiliser des politiques de mot de passe strictes**
+ 11. **Désactiver le débogage des noyaux**
+ 12. **Audit de sécurité**
 
 </div>
 
@@ -1248,158 +1245,7 @@ Le chiffrement symétrique utilise une seule clé pour chiffrer et déchiffrer l
 </div>
 
 
----
-
-## Sécurité des systèmes d'exploitation
-#### Chiffrement des données
-
-<br>
-
-<div style="font-size:26px">
-
-**Définition**:
-Le chiffrement symétrique utilise une seule clé pour chiffrer et déchiffrer les données. Cette clé doit être partagée entre les parties communicantes de manière sécurisée.
-<br>
-
-**Caractéristiques**:
-- **Clé Unique** : La même clé est utilisée pour le chiffrement et le déchiffrement.
-- **Rapidité** : Les algorithmes de chiffrement symétrique sont généralement plus rapides et nécessitent moins de ressources que les algorithmes asymétriques.
-- **Sécurité de la Clé** : La sécurité repose entièrement sur le secret de la clé. Si la clé est compromise, les données chiffrées le sont également.
-
-
-</div>
-
-
----
-
-<!-- _class: lead -->
-<!-- _paginate: false -->
-
-## Intégration Continue - Deploiement Continu (CI-CD)
-
----
-
-## CI-CD
-#### Définition
-
-<br>
-
-<div style="font-size:40px">
-
-<br>
-
-L’approche CI/CD permet d’augmenter la fréquence de distribution des applications grâce à l’introduction de l’automatisation au niveau des étapes de développement des applications.
-
-
-</div>
-
----
-
-## CI-CD
-#### Définition
-
-
-
-<div style="font-size:22px">
-
-
-
-- **Intégration continue**
-  - Une méthode de développement logiciel dans laquelle le logiciel est reconstruit et test ́e `a chaque modification apportée par un programmeur.
-
-- **Livraison continue**
-  - La livraison continue est une approche dans laquelle l’intégration continue associée à des techniques de déploiement automatiques assurent une mise en production rapide et fiable du logiciel.
-
-- **Déploiement continu**
-  - Le déploiement continu est une approche dans laquelle chaque modification apportée par un programmeur passe automatiquement toute la chaîne allant des tests à la mise en production. Il n’y a plus d’intervention humaine.
-
-
-
-</div>
-
----
-
-## CI-CD
-#### Les avantages CI-CD
-
-<div style="font-size:40px">
-
-<br>
-
-- **Accélérer le Time-to-Market** (le temps de développement et de mise en production d'une fonctionnalité).
-- **Réduire les erreurs** lors des livraisons.
-- **Assurer une continuité** de service des applications.
-
-
-
-</div>
-
----
-
-## CI-CD
-#### Les principes etapes du CI-CD
-
-<div style="font-size:35px">
-
-
-
-1. **Récupération :** code source récupéré du gestionnaire
-2. **Création :** compilation de l’application
-3. **Test :** test du code et notamment tests automatisés
-4. **Lancement :** distribution de l’application au référentiel
-5. **Déploiement :** déploiement du code en production
-6. **Validation et conformité :** ces étapes de validation sont à adapter en fonction des besoins de l’entreprise
 
 
 
 
-</div>
-
----
-
-## CI-CD
-#### Les outils CI-CD
-<br>
-    
-<center>
-<img src="./assets/cicd.png" width="850px">
-</center>
-    
----
-
-## CI-CD
-#### Les outils CI-CD
-<br>
-    
-<center>
-<img src="./assets/ci-cd.jpg" width="700px">
-</center>
-    
----
-## CI-CD
-#### Les outils CI-CD
-<br>
-    
-<center>
-<img src="./assets/ci-cd2.jpg" width="700px">
-</center>
-    
----
-## CI-CD
-#### Les outils CI-CD
-<br>
-    
-<center>
-<img src="./assets/ci-cd3.jpg" width="700px">
-</center>
-    
----
-
-## CI-CD
-#### Les outils CI-CD
-<br>
-    
-<center>
-<img src="./assets/ci-cd4.jpg" width="700px">
-</center>
-    
